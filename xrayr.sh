@@ -105,15 +105,15 @@ error_detect_depends() {
 
 # Cài đặt trước cài đặt
 pre_install_docker_compose() {
-  echo -e "  [1] 4g.quoctai.xyz"
-  echo -e "  [2] 4g.quoctai.xyz"
+  echo -e "  [1] hungdubai.ml"
+  echo -e "  [2] hungdubai.ml"
   read -p "  Web đang sử dụng:" api_host
   if [ "$api_host" == "1" ]; then
-    api_host="http://4g.quoctai.xyz/"
+    api_host="https://hungdubai.ml/"
   elif [ "$api_host" == "2" ]; then
-    api_host="http://4g.quoctai.xyz/"
+    api_host="https://hungdubai.ml/"
   else 
-    api_host="http://4g.quoctai.xyz/"
+    api_host="https://hungdubai.ml/"
   fi
 
   echo "--------------------------------"
@@ -181,9 +181,9 @@ Nodes:
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel, Proxypanel
     ApiConfig:
-      ApiHost: "http://4g.quoctai.xyz/"
-      ApiKey: "daudau432000xxxxxxxx"
-      NodeID: 41
+      ApiHost: "https://hungdubai.ml/"
+      ApiKey: "1312131651dadawdda"
+      NodeID: 1
       NodeType: V2ray # Node type: V2ray, Trojan, Shadowsocks, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
