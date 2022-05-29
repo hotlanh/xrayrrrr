@@ -105,15 +105,15 @@ error_detect_depends() {
 
 # Cài đặt trước cài đặt
 pre_install_docker_compose() {
-  echo -e "  [1] hungdubai.ml"
-  echo -e "  [2] hungdubai.ml"
+  echo -e "  [1] hvpn.xyz"
+  echo -e "  [2] hvpn.xyz"
   read -p "  Web đang sử dụng:" api_host
   if [ "$api_host" == "1" ]; then
-    api_host="https://hungdubai.ml/"
+    api_host="https://hvpn.xyz/"
   elif [ "$api_host" == "2" ]; then
-    api_host="https://hungdubai.ml/"
+    api_host="https://hvpn.xyz/"
   else 
-    api_host="https://hungdubai.ml/"
+    api_host="https://hvpn.xyz/"
   fi
 
   echo "--------------------------------"
@@ -181,8 +181,8 @@ Nodes:
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel, Proxypanel
     ApiConfig:
-      ApiHost: "https://hungdubai.ml/"
-      ApiKey: "1312131651dadawdda"
+      ApiHost: "https://hvpn.xyz/"
+      ApiKey: "khongbietnhapcaigiluon"
       NodeID: 1
       NodeType: V2ray # Node type: V2ray, Trojan, Shadowsocks, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
@@ -352,8 +352,7 @@ clear
 while true; do
   echo "  -----XrayR Aiko-----"
   echo "  Địa chỉ dự án và tài liệu trợ giúp:  https://github.com/AikoCute/XrayR"
-  echo "  AikoCute Hột Me"
-  echo "  Vui lòng nhập một số để Thực Hiện Câu Lệnh:"
+  echo "  Vui lòng nhập lựa chọn:"
   for ((i = 1; i <= ${#operation[@]}; i++)); do
     hint="${operation[$i - 1]}"
     echo -e "${green}${i}${plain}) ${hint}"
@@ -363,7 +362,7 @@ while true; do
   case "${selected}" in
   1 | 2 | 3 | 4 | 5 | 6 | 7)
     echo
-    echo "  Bắt Đầu : ${operation[${selected} - 1]}"
+    echo "  Bắt Đầu: ${operation[${selected} - 1]}"
     echo
     ${operation[${selected} - 1]}_xrayr
     break
